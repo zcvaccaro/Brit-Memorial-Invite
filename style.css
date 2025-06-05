@@ -1,0 +1,220 @@
+/* Mobile-first styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e9a7a7;
+  color: #333;
+}
+
+.hero-banner {
+  background-image: url("banner-img.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.hero-content {
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.hero-banner h1,
+.hero-banner h3,
+.hero-banner .date-location {
+  position: relative;
+  z-index: 1;
+  color: #fff; /* white text looks good on dark overlay */
+  text-shadow: 0 1px 1px rgba(0,0,0,0.7); /* subtle shadow for extra clarity */
+  font-weight: 100;
+}
+
+
+.hero-banner h1 {
+  font-family: 'Mea Culpa', cursive;
+  font-size: 3.5rem;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-banner h3 {
+  font-family: 'Mea Culpa', cursive;
+  font-size: 2rem;
+  margin: 2px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #e9a7a7;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header, section, footer {
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #222;
+}
+
+.date-location a{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border:#ffffff solid 1px;
+}
+
+.image-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  margin: 20px 20px;
+}
+
+.image-row article {
+  flex: 1 1 30%;
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #e9a7a7;
+  box-sizing: border-box;
+}
+
+.image-row img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+  margin: 8px 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #8f57c4; /* example color matching your purple */
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+.message {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: #ebecd1;
+  border: 1px solid #8f57c4;
+  color: #8f57c4;
+}
+input::placeholder {
+  color: #8f57c4;
+}
+
+
+input, button {
+  font-size: 1rem;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #8f57c4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ac81d4;
+}
+
+button:disabled {
+  background-color: #ac81d4;
+  cursor: not-allowed;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Spinner styling */
+.spinner {
+  border: 4px solid #8f57c4;
+  border-top: 4px solid #e9a7a7;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Optional: improvement for wider screens */
+@media (min-width: 768px) {
+  body {
+    background: #e9a7a7;
+  }
+
+  .container {
+    margin-top: 40px;
+  }
+}

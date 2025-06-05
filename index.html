@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Memorial Invitation for Brit" />
+  <meta property="og:description" content="Join us in remembering Brit on 6/28. Click to RSVP." />
+  <meta property="og:image" content="https://yourdomain.com/memorial-image.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <title>Memorial Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero-banner">
+        <div class="hero-content">
+          <h3>Please Join us in Memory of</h3>
+          <h1>Brittany Litecky</h1>
+          <p class="date-location">
+            <a 
+              href="https://www.google.com/maps/dir/?api=1&destination=297+Bruynswick+Rd,+Gardiner,+NY" 
+              target="_blank" 
+              rel="noopener noreferrer">
+            Saturday, June 28 · 3pm-8pm <br>
+            Full Circle <br> 297 Bruynswick Rd, Gardiner
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <section class="image-row">
+            <article id="image1">
+                <img src="image1.png" alt="At the pool" class="image1">
+            </article>
+            <article id="image2">
+                <img src="image2.png" alt="With cookies" class="image2">
+            </article>
+            <article id="image3">
+                <img src="image3.png" alt="Holding the sun" class="image3">
+            </article>
+        </section>
+      <hr />
+      <p class="message">
+        Join us in honoring the beautiful spirit of our dear friend, Brittany Litecky, 
+        whose adventurous heart and vibrant kindness touched the lives of many. 
+        We gather to celebrate the incredible journey of someone who embraced life with passion 
+        and enthusiasm.
+        Let us come together to share stories, laughter, and love as we remember 
+        Brittany’s unforgettable laughter, her adventurous spirit, and the beautiful impact she made 
+        on our lives.<br> Bring a favorite memory or a photo to share, as we celebrate not just her life 
+        but the enduring legacy of friendship and love she left behind.
+        Together, let’s paint a tapestry of her life filled with vibrant colors, 
+        reflecting the beautiful adventures and precious moments we shared with her.<br> Please RSVP below.
+      </p>
+      <hr />
+    </header>
+
+    <section class="rsvp">
+      <h2>RSVP</h2>
+      <form id="rsvp-form">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        
+        <input type="number" name="guests" min="1" placeholder="Number Attending" required inputmode="numeric">
+
+        <button type="submit">Submit RSVP</button>
+      </form>
+
+      <div id="spinner" class="spinner" style="display: none;"></div>
+    </section>
+
+    <footer>
+      <p>Thank you for being part of this remembrance.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
