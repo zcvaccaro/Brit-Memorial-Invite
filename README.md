@@ -1,1 +1,0 @@
-# Brit-Memorial-Invite
